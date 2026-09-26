@@ -11,7 +11,10 @@ export const metadata: Metadata = {
   description:
     "Premium technology products engineered for the future. Smartphones, audio, wearables, and intelligent systems from NEXORA.",
   icons: {
-    icon: [{ url: "/brand/nexora-logo.png", type: "image/png" }],
+    icon: [
+      { url: "/brand/nexora-logo.png", type: "image/png" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
     apple: [{ url: "/brand/nexora-logo.png" }],
     shortcut: ["/brand/nexora-logo.png"],
   },
@@ -35,7 +38,8 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/brand/nexora-logo.png" type="image/png" />
+        <link rel="icon" href="/brand/nexora-logo.png" type="image/png" sizes="any" />
+        <link rel="shortcut icon" href="/brand/nexora-logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/brand/nexora-logo.png" />
       </head>
       <body className="min-h-full flex flex-col bg-bg-primary text-silver">
